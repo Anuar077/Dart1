@@ -1,13 +1,19 @@
 main() {
-  int n = 101;
-  for (int i = 1; i <n; i++) {
-    if( i%3 == 0 && i%5 == 0 ){
-      print("Ush pen Bes");
-    }else if(i%5 == 0){
-      print("Bes");
-    }else if(i%3 == 0){
-      print("Ush ");
-    }
-print(i);
+    list ('Almaty','Aktau','Oral','Oskemen','Semey');
   }
-}
+
+  void list(String a,String b, String c, String d, String e){
+    var len = [a,b,c,d,e];
+    var big = len[0].length;
+    print(len);
+    for (int i =0;i <len.length;i++){
+      if (len[i].length >big) {
+        big = len[i].length;
+      }
+    }
+    print(big);
+  }
+
+
+
+
